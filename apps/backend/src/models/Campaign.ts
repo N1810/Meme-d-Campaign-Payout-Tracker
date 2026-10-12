@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { CampaignPlatform, CampaignStatus, Milestone } from '@memed/shared';
+import { CampaignPlatform, CampaignStatus, Milestone } from '../shared';
 
 export interface ICampaign extends Document {
   _id: Types.ObjectId;

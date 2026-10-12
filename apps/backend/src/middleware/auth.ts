@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { verifyToken, TokenPayload } from '../utils/auth';
-import { UserRole } from '@memed/shared';
+import { UserRole } from '../shared';
 
 // Extend Express Request type
 declare global {

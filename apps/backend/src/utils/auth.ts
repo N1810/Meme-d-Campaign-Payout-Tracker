@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
-import { UserRole } from '@memed/shared';
+import { UserRole } from '../shared';
 
 export interface TokenPayload {
   userId: string;

@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { SubmissionStatus } from '@memed/shared';
+import { SubmissionStatus } from '../shared';
 
 export interface ISubmission extends Document {
   _id: Types.ObjectId;

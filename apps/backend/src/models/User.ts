@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { UserRole } from '@memed/shared';
+import { UserRole } from '../shared';
 
 export interface IUser extends Document {
   _id: Types.ObjectId;

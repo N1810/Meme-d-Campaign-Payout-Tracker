@@ -4,7 +4,7 @@ import {
   CreateCampaignSchema,
   UpdateCampaignStatusSchema,
   CampaignDTO,
-} from '@memed/shared';
+} from '../shared';
 import { Campaign, Submission } from '../models';
 import { cacheService } from '../services/cacheService';
 

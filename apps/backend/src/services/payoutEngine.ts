@@ -1,4 +1,4 @@
-import { Milestone } from '@memed/shared';
+import { Milestone } from '../shared';
 
 export interface PayoutCalculationResult {
   eligiblePayoutPaise: number;

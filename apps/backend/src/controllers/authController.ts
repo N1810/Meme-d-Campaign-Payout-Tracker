@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { SignupSchema, LoginSchema } from '@memed/shared';
+import { SignupSchema, LoginSchema } from '../shared';
 import { User } from '../models';
 import { hashPassword, comparePassword, signToken } from '../utils/auth';
 

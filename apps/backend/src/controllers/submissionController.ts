@@ -4,7 +4,7 @@ import {
   CreateSubmissionSchema,
   UpdateViewsSchema,
   isValidPostUrl,
-} from '@memed/shared';
+} from '../shared';
 import { Submission, Campaign } from '../models';
 import { PayoutService } from '../services/payoutService';
 
