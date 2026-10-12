@@ -5,6 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "prebuild": "pnpm --filter @memed/shared build",
     "build": "tsc",
     "start": "node dist/server.js",
     "typecheck": "tsc --noEmit",
