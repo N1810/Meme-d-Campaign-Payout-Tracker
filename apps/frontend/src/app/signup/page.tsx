@@ -4,7 +4,7 @@ import React, { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { SignupSchema, SignupInput, UserRole } from '@memed/shared';
+import { SignupSchema, SignupInput, UserRole } from '@/shared';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/Button';
 import { Sparkles, AlertCircle, Building2, User } from 'lucide-react';

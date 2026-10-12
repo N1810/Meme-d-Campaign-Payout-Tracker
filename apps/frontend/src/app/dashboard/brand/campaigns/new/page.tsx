@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { rupeesToPaise, CampaignPlatform } from '@memed/shared';
+import { rupeesToPaise, CampaignPlatform } from '@/shared';
 import { api } from '@/lib/api';
 import { Button } from '@/components/ui/Button';
 import {

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { LoginSchema, LoginInput } from '@memed/shared';
+import { LoginSchema, LoginInput } from '@/shared';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/Button';
 import { Sparkles, AlertCircle } from 'lucide-react';

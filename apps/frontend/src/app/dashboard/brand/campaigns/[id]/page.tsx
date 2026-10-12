@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
-import { CampaignDTO, SubmissionDTO, formatINR, CampaignStatus } from '@memed/shared';
+import { CampaignDTO, SubmissionDTO, formatINR, CampaignStatus } from '@/shared';
 import { api } from '@/lib/api';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/Button';
