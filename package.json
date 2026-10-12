@@ -1,0 +1,28 @@
+{
+  "name": "memed-payout-tracker-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-grade Meme'd Campaign Payout Tracker with transactional budget protection",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @memed/shared build && concurrently -n \"backend,frontend\" -c \"blue,green\" \"pnpm --filter @memed/backend dev\" \"pnpm --filter @memed/frontend dev\"",
+    "dev:backend": "pnpm --filter @memed/shared build && pnpm --filter @memed/backend dev",
+    "dev:frontend": "pnpm --filter @memed/shared build && pnpm --filter @memed/frontend dev",
+    "build": "pnpm --filter @memed/shared build && pnpm --filter @memed/backend build && pnpm --filter @memed/frontend build",
+    "lint": "pnpm --recursive run lint",
+    "typecheck": "pnpm --recursive run typecheck",
+    "test": "pnpm --filter @memed/backend test",
+    "test:unit": "pnpm --filter @memed/backend test:unit",
+    "test:integration": "pnpm --filter @memed/backend test:integration",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
