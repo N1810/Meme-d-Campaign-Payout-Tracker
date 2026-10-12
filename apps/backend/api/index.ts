@@ -4,14 +4,14 @@ dotenv.config();
 import { createApp } from '../src/app';
 import { connectDB } from '../src/config/db';
 
-let isConnected = false;
-
 const app = createApp();
 
 export default async function handler(req: any, res: any) {
-  if (!isConnected) {
+  try {
     await connectDB();
-    isConnected = true;
+  } catch (err) {
+    console.error('Failed to establish MongoDB connection in serverless handler:', err);
+    return res.status(500).json({ success: false, error: 'Database connection failed' });
   }
   return app(req, res);
 }
