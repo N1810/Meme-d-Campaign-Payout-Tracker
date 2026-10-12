@@ -35,6 +35,15 @@ export function createApp(): express.Application {
   app.use(cookieParser());
   app.use(express.json());
 
+  // Root endpoint
+  app.get('/', (_req, res) => {
+    res.status(200).json({
+      status: 'healthy',
+      name: "Meme'd Campaign Payout Tracker API",
+      timestamp: new Date().toISOString(),
+    });
+  });
+
   // Health check endpoint
   app.get('/health', (_req, res) => {
     res.status(200).json({ status: 'healthy', timestamp: new Date().toISOString() });
