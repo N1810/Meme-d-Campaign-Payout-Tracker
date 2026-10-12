@@ -99,9 +99,6 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.10.0
         version: 3.10.0(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.0))
-      '@memed/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
